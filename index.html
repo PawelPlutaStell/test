@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularz JSON</title>
+</head>
+<body>
+    <h1>Tworzenie pliku JSON</h1>
+    <form id="jsonForm">
+        <h2>Development</h2>
+        <!-- Pola dla sekcji "development" -->
+        <label for="dev_data_catalog">data_catalog:</label>
+        <input type="text" id="dev_data_catalog" name="dev_data_catalog"><br>
+
+        <label for="dev_predictions_table">predictions_table:</label>
+        <input type="text" id="dev_predictions_table" name="dev_predictions_table"><br>
+
+        <label for="dev_vehicle_info_table_name">vehicle_info_table_name:</label>
+        <input type="text" id="dev_vehicle_info_table_name" name="dev_vehicle_info_table_name"><br>
+
+        <label for="dev_suffix">suffix:</label>
+        <input type="text" id="dev_suffix" name="dev_suffix"><br>
+
+        <label for="dev_input_data_path">input_data_path:</label>
+        <input type="text" id="dev_input_data_path" name="dev_input_data_path"><br>
+
+        <label for="dev_file_name">file_name:</label>
+        <input type="text" id="dev_file_name" name="dev_file_name"><br>
+
+        <label for="dev_warranty_length">warranty_length:</label>
+        <input type="number" id="dev_warranty_length" name="dev_warranty_length"><br>
+
+        <label for="dev_window">window:</label>
+        <input type="text" id="dev_window" name="dev_window"><br>
+
+        <label for="dev_decision_lag">decision_lag:</label>
+        <input type="number" id="dev_decision_lag" name="dev_decision_lag"><br>
+
+        <label for="dev_sequence_length">sequence_length:</label>
+        <input type="number" id="dev_sequence_length" name="dev_sequence_length"><br>
+
+        <label for="dev_block_size">block_size:</label>
+        <input type="number" id="dev_block_size" name="dev_block_size"><br>
+
+        <label for="dev_subsequence_length">subsequence_length:</label>
+        <input type="number" id="dev_subsequence_length" name="dev_subsequence_length"><br>
+
+        <label for="dev_ensemble_size">ensemble_size:</label>
+        <input type="number" id="dev_ensemble_size" name="dev_ensemble_size"><br>
+
+        <label for="dev_stage">stage:</label>
+        <input type="text" id="dev_stage" name="dev_stage"><br>
+
+        <label for="dev_kernel_size">kernel_size:</label>
+        <input type="number" id="dev_kernel_size" name="dev_kernel_size"><br>
+
+        <label for="dev_score_id">score_id:</label>
+        <input type="text" id="dev_score_id" name="dev_score_id"><br>
+
+        <label for="dev_score_timestamp">score_timestamp:</label>
+        <input type="text" id="dev_score_timestamp" name="dev_score_timestamp"><br>
+
+        <label for="dev_end_date">end_date:</label>
+        <input type="date" id="dev_end_date" name="dev_end_date"><br>
+
+        <label for="dev_end_date_mod">end_date_mod:</label>
+        <input type="text" id="dev_end_date_mod" name="dev_end_date_mod"><br>
+
+        <label for="dev_start_date">start_date:</label>
+        <input type="date" id="dev_start_date" name="dev_start_date"><br>
+
+        <h2>Production</h2>
+        <!-- Pola dla sekcji "production" -->
+        <label for="prod_data_catalog">data_catalog:</label>
+        <input type="text" id="prod_data_catalog" name="prod_data_catalog"><br>
+
+        <label for="prod_predictions_table">predictions_table:</label>
+        <input type="text" id="prod_predictions_table" name="prod_predictions_table"><br>
+
+        <label for="prod_vehicle_info_table_name">vehicle_info_table_name:</label>
+        <input type="text" id="prod_vehicle_info_table_name" name="prod_vehicle_info_table_name"><br>
+
+        <label for="prod_suffix">suffix:</label>
+        <input type="text" id="prod_suffix" name="prod_suffix"><br>
+
+        <label for="prod_input_data_path">input_data_path:</label>
+        <input type="text" id="prod_input_data_path" name="prod_input_data_path"><br>
+
+        <label for="prod_file_name">file_name:</label>
+        <input type="text" id="prod_file_name" name="prod_file_name"><br>
+
+        <label for="prod_warranty_length">warranty_length:</label>
+        <input type="number" id="prod_warranty_length" name="prod_warranty_length"><br>
+
+        <label for="prod_window">window:</label>
+        <input type="text" id="prod_window" name="prod_window"><br>
+
+        <label for="prod_decision_lag">decision_lag:</label>
+        <input type="number" id="prod_decision_lag" name="prod_decision_lag"><br>
+
+        <label for="prod_sequence_length">sequence_length:</label>
+        <input type="number" id="prod_sequence_length" name="prod_sequence_length"><br>
+
+        <label for="prod_block_size">block_size:</label>
+        <input type="number" id="prod_block_size" name="prod_block_size"><br>
+
+        <label for="prod_subsequence_length">subsequence_length:</label>
+        <input type="number" id="prod_subsequence_length" name="prod_subsequence_length"><br>
+
+        <label for="prod_ensemble_size">ensemble_size:</label>
+        <input type="number" id="prod_ensemble_size" name="prod_ensemble_size"><br>
+
+        <label for="prod_stage">stage:</label>
+        <input type="text" id="prod_stage" name="prod_stage"><br>
+
+        <label for="prod_kernel_size">kernel_size:</label>
+        <input type="number" id="prod_kernel_size" name="prod_kernel_size"><br>
+
+        <label for="prod_score_id">score_id:</label>
+        <input type="text" id="prod_score_id" name="prod_score_id"><br>
+
+        <label for="prod_score_timestamp">score_timestamp:</label>
+        <input type="text" id="prod_score_timestamp" name="prod_score_timestamp"><br>
+
+        <label for="prod_end_date">end_date:</label>
+        <input type="date" id="prod_end_date" name="prod_end_date"><br>
+
+        <label for="prod_end_date_mod">end_date_mod:</label>
+        <input type="text" id="prod_end_date_mod" name="prod_end_date_mod"><br>
+
+        <label for="prod_start_date">start_date:</label>
+        <input type="date" id="prod_start_date" name="prod_start_date"><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        document.getElementById('jsonForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // Zbieranie danych z formularza dla "development"
+            var development = {
+                data_catalog: document.getElementById('dev_data_catalog').value,
+                predictions_table: document.getElementById('dev_predictions_table').value,
+                vehicle_info_table_name: document.getElementById('dev_vehicle_info_table_name').value,
+                suffix: document.getElementById('dev_suffix').value,
+                input_data_path: document.getElementById('dev_input_data_path').value,
+                file_name: document.getElementById('dev_file_name').value,
+                warranty_length: parseInt(document.getElementById('dev_warranty_length').value),
+                window: document.getElementById('dev_window').value,
+                decision_lag: parseInt(document.getElementById('dev_decision_lag').value),
+                sequence_length: parseInt(document.getElementById('dev_sequence_length').value),
+                block_size: parseInt(document.getElementById('dev_block_size').value),
+                subsequence_length: parseInt(document.getElementById('dev_subsequence_length').value),
+                ensemble_size: parseInt(document.getElementById('dev_ensemble_size').value),
+                stage: document.getElementById('dev_stage').value,
+                kernel_size: parseInt(document.getElementById('dev_kernel_size').value),
+                score_id: document.getElementById('dev_score_id').value,
+                score_timestamp: document.getElementById('dev_score_timestamp').value,
+                end_date: document.getElementById('dev_end_date').value,
+                end_date_mod: document.getElementById('dev_end_date_mod').value,
+                start_date: document.getElementById('dev_start_date').value
+            };
+
+            // Zbieranie danych z formularza dla "production"
+            var production = {
+                data_catalog: document.getElementById('prod_data_catalog').value,
+                predictions_table: document.getElementById('prod_predictions_table').value,
+                vehicle_info_table_name: document.getElementById('prod_vehicle_info_table_name').value,
+                suffix: document.getElementById('prod_suffix').value,
+                input_data_path: document.getElementById('prod_input_data_path').value,
+                file_name: document.getElementById('prod_file_name').value,
+                warranty_length: parseInt(document.getElementById('prod_warranty_length').value),
+                window: document.getElementById('prod_window').value,
+                decision_lag: parseInt(document.getElementById('prod_decision_lag').value),
+                sequence_length: parseInt(document.getElementById('prod_sequence_length').value),
+                block_size: parseInt(document.getElementById('prod_block_size').value),
+                subsequence_length: parseInt(document.getElementById('prod_subsequence_length').value),
+                ensemble_size: parseInt(document.getElementById('prod_ensemble_size').value),
+                stage: document.getElementById('prod_stage').value,
+                kernel_size: parseInt(document.getElementById('prod_kernel_size').value),
+                score_id: document.getElementById('prod_score_id').value,
+                score_timestamp: document.getElementById('prod_score_timestamp').value,
+                end_date: document.getElementById('prod_end_date').value,
+                end_date_mod: document.getElementById('prod_end_date_mod').value,
+                start_date: document.getElementById('prod_start_date').value
+            };
+
+            // Tworzenie obiektu JSON
+            var jsonData = {
+                development: development,
+                production: production
+            };
+
+            // Konwersja do formatu JSON
+            var jsonString = JSON.stringify(jsonData, null, 2);
+
+            // Pobieranie pliku JSON
+            var blob = new Blob([jsonString], {type: "application/json"});
+            var link = document.createElement('a');
+            link.href = window.URL.createObjectURL(blob);
+            link.download = "plik.json";
+            link.click();
+        });
+    </script>
+</body>
+</html>
